@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pinterest Style Gallery</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+
+        
+
+        <h2>Gallery</h2>
+
+    </div>
+
+    <div class="search-box">
+
+        <input
+        type="text"
+        id="searchInput"
+        placeholder="Search images...">
+
+        <button id="searchBtn">
+
+            Search
+
+        </button>
+
+    </div>
+
+</header>
+
+<section class="categories">
+
+<button class="category active" data-search="Nature">Nature</button>
+
+<button class="category" data-search="Animals">Animals</button>
+
+<button class="category" data-search="Technology">Technology</button>
+
+<button class="category" data-search="Cars">Cars</button>
+
+<button class="category" data-search="Food">Food</button>
+
+<button class="category" data-search="Flowers">Flowers</button>
+
+<button class="category" data-search="Mountains">Mountains</button>
+
+<button class="category" data-search="Travel">Travel</button>
+
+</section>
+
+<div class="gallery" id="gallery">
+
+</div>
+
+<div class="loader" id="loader">
+
+Loading Images...
+
+</div>
+
+<button id="topBtn">
+
+↑
+
+</button>
+
+<div class="modal" id="modal">
+
+<span id="close">
+
+✕
+
+</span>
+
+<img id="modalImg">
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+
+</html>
